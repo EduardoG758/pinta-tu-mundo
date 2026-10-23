@@ -1,0 +1,52 @@
+.how {
+  background: var(--cream-light);
+  border-block: var(--border);
+}
+
+.how__steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 28px;
+}
+
+.how__step {
+  --step-color: var(--turquoise);
+  position: relative;
+  padding: 44px 24px 24px;
+  background: var(--white);
+  border: var(--border);
+  border-radius: var(--radius);
+  box-shadow: 6px 6px 0 var(--step-color);
+}
+
+.how__step--turquoise { --step-color: var(--turquoise); }
+.how__step--yellow { --step-color: var(--yellow); }
+.how__step--pink { --step-color: var(--pink); }
+.how__step--green { --step-color: var(--green); }
+
+.how__number {
+  position: absolute;
+  top: -24px;
+  left: 24px;
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  font: 700 1.5rem var(--heading);
+  color: var(--white);
+  background: var(--step-color);
+  border: var(--border);
+  border-radius: 50%;
+}
+
+.how__step h3 {
+  font-size: 1.35rem;
+}
+
+.how__step p {
+  margin: 0;
+  color: var(--text-soft);
+}

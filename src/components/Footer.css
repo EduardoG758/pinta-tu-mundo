@@ -1,0 +1,34 @@
+.footer {
+  padding: 40px 0 96px;
+  color: var(--cream);
+  background: var(--navy);
+}
+
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.footer__logo {
+  width: 110px;
+  border-radius: 20px;
+}
+
+.footer__social {
+  display: flex;
+  gap: 24px;
+  font: 600 1rem var(--heading);
+}
+
+.footer__social a {
+  color: var(--yellow);
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
